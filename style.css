@@ -1,0 +1,77 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box
+}
+
+html{
+  height: 100%;
+}
+header, footer{
+  /*height: 60px;*/
+  margin: 20px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+p, footer {
+  font-family: "Roboto slab", "Arial", sans-serif;
+}
+.card-text{
+ font-family: "Roboto slab", "Arial", sans-serif;
+ font-style: normal;
+}
+
+.nav-link{
+  color: #5222D0;
+  border: 1px solid #5222D0;
+}
+@media screen and (min-width: 600px) {
+.maincontainer{
+  display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+.cell-1{
+  margin: 20px;
+}
+}
+.card-body-6{
+  background-color: #EC615B;
+  color: white;
+}
+.form-control{
+  margin-bottom: 20px;
+}
+.btn{
+  margin-bottom: 20px;
+}
+
+@font-face {
+  font-family: "Intro-Black-Caps";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  /*src: local("Intro-Black-Caps")*/
+       /* Если не получилось, загрузит woff2 */
+       src: url("fonts/intro/Intro-Black-Caps.ttf") format("truetupe");
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       /*url("/fonts/roboto.woff") format("woff");*/
+}
+
+/*@font-face {
+/* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) */
+/*font-family: "RalewayRegular";*/
+/* адрес шрифта и тип */
+/*src: url("../fonts/RalewayRegular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}*/
+/*h1{
+font-family: "RalewayRegular";
+}*/
+
+h1{
+  font-family: "Intro-Black-Caps", "Arial", sans-serif;
+}
